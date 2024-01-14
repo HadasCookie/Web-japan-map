@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 5 Most Beautiful sites I Have Visited</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .thumbnail-container {
+            position: relative;
+        }
+
+        .thumbnail {
+            width: 1700px;
+            height: 600px;
+            margin: 20px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>5 Most Beautiful Sites I Wish To Visit In Japan</h1>
+    </header>
+
+    <nav>
+        <a href="Tokyo.html">Tokyo</a>
+        <a href="Kamikōchi.html">Kamikōchi</a>
+        <a href="Kyoto.html">Kyoto</a>
+        <a href="Mount_fiji.html">Mount fiji</a>
+        <a href="Osaka.html">Osaka</a>
+    </nav>
+
+    <main>
+        <p>Welcome to the homepage! Choose a place from the menu to learn more.</p>
+    </main>
+
+    <!-- Photo grid with image map -->
+    <main class="thumbnail-container">
+        <map name="siteMap">
+            <!-- Replace these coordinates with the actual coordinates for your images -->
+            <area shape="rect" coords="14,14,470,242" alt="Tokyo" href="Tokyo.html">
+            <area shape="rect" coords="534,13,990,246" alt="Kamikōchi" href="Kamikōchi.html">
+            <area shape="rect" coords="1512,249,1050,11" alt="Kyoto" href="Kyoto.html">
+            <area shape="rect" coords="734,542,272,304" alt="Mount fiji" href="Mount_Fiji.html">
+            <area shape="rect" coords="784,300,1253,544" alt="Osaka" href="Osaka.html">
+        </map>
+
+        <!-- Replace these image sources with your actual image paths -->
+        <div class="thumbnail">
+            <img src="./map.png" alt="Map Thumbnail" usemap="#siteMap">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hadas Mayan</p>
+    </footer>
+</body>
+</html>
